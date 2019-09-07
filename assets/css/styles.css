@@ -1,0 +1,222 @@
+.bgimage {
+   background-image: url('../images/panoramica1.jpg');
+   height: 100px;
+   background-size: cover;
+   background-position: center;
+
+}
+
+.tooltip-inner {
+   max-width: 250px;
+}
+
+.media img {
+   width: 180px;
+   margin-bottom: 16px;
+   margin-right: 16px;
+   border-radius: 6%;
+}
+
+.footer {
+   background-color: #333;
+   color: #efefef;
+   padding: 30px 0;
+}
+
+.footer a {
+   color: #639bcf;
+}
+
+.footer a:hover {
+   color: #d8e6f3;
+}
+
+/* .texto-1 {
+   font-size: 35px;
+} */
+
+/* .texto-2 {
+   font-size: 30px;
+} */
+
+@media (max-width: 1100px) {
+/*    .texto-1 {
+      font-size: 30px;
+   } */
+   
+/*    .texto-2 {
+      font-size: 25px;
+   } */   
+}
+
+@media (max-width: 480px) {
+
+   .media img {
+      width: 90px;
+      margin-bottom: 6px;
+      border-radius: 50%;
+   }
+   
+   .media-body h5 {
+      padding-top: 18px;
+      font-size: 15px;
+   }
+   
+   .texto-media-body {
+      display: none;
+   }
+
+}
+
+.carousel-fade .carousel-item {
+  height:100%;
+}
+
+.carousel-fade .carousel-item img {
+  height:100vh;
+  width:100%;
+  max-width:100%;
+  background-size:cover;
+  background-origin:content-box;
+  background-clip:content-box;
+  background-position:center;
+  color:rgba(0,0,0,0.56);
+  filter:brightness(30%);
+  right:0;
+  left:0;
+  resize:both;
+}
+
+.la {
+  opacity:99;
+  z-index:1;
+  position:relative;
+}
+
+.carousel-indicators li {
+  color:#000;
+  width:30px;
+  margin:5px !important;
+}
+
+.carousel-caption {
+  top:220px;
+}
+
+@media (min-width: 992px) {
+  .carousel-caption {
+    top:220px !important;
+  }
+}
+
+.carousel-caption h3 {
+  font-size:70px;
+  text-align:center;
+  font-weight:bold;
+}
+
+@media (min-width: 992px) {
+  .carousel-caption h3 {
+    font-size:70px !important;
+    text-align:center;
+    font-weight:bold;
+  }
+}
+
+.carousel-caption p {
+  font-size:30px;
+  margin-top:20px;
+  text-align:center;
+}
+
+@media (min-width: 992px) {
+  .carousel-caption p {
+    font-size:30px !important;
+    margin-top:20px;
+    text-align:center;
+  }
+}
+
+.carousel-caption .btn {
+  border:2px solid #fff;
+  border-radius:0;
+}
+
+@media (min-width: 300px) {
+  .img-fluid.w-100.d-block {
+    height:auto;
+  }
+}
+
+@media (min-width: 576px) {
+  .img-fluid.w-100.d-block {
+    height:auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .img-fluid.w-100.d-block {
+    height:auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .img-fluid.w-100.d-block {
+    height:60vh;
+  }
+}
+
+@media (min-width: 300px) {
+  .carousel-caption {
+    top:0;
+    font-size:20px;
+  }
+}
+
+@media (min-width: 300px) {
+  .carousel-caption h3 {
+    font-size:20px;
+  }
+}
+
+.carousel-caption p {
+  font-size:15px;
+}
+
+@media (min-width: 768px) {
+  .carousel-caption {
+    top:100px;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-caption h3 {
+    font-size:40px;
+  }
+}
+
+.centralizar-horizontalmente {
+  width: 200px;
+  height: 50px;
+  line-height: 53px;
+  text-align:center;
+  color: white;
+  
+  /* pura mágica */
+  position: absolute;
+  top: 50%; /* posiciona na metade da tela */
+  margin-top: -25px; /* e retrocede metade da altura */
+  left: 50%; /* posiciona na metade da tela */
+  margin-left: -100px; /* e retrocede metade da largura */
+}
+.centralizar-verticalmente {
+  height: 50px;
+  line-height: 37px;
+  text-align:center;
+  color: white;
+  
+  /* pura mágica */
+  position: absolute;
+  top: 50%; /* posiciona na metade da tela */
+  margin-top: -25px; /* e retrocede metade da altura */
+}
