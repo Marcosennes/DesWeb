@@ -4560,8 +4560,9 @@ input[type="button"].btn-block {
   -ms-flex-direction: column;
   flex-direction: column;
   min-width: 0;
+  max-width: 260px;
   word-wrap: break-word;
-  background-color: rgba(0,0,0,0.09);
+  background-color: rgba(0,0,0,0.08);
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
@@ -4662,6 +4663,7 @@ input[type="button"].btn-block {
 
 .card-img-top {
   width: 100%;
+  height: 10%;
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
 }

@@ -222,3 +222,6 @@
 .bg-login{
   background-color: rgba(0,0,0,0.09) !important;
 }
+.price{
+  color: orangered;
+}
