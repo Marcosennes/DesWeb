@@ -209,14 +209,16 @@
   left: 50%; /* posiciona na metade da tela */
   margin-left: -100px; /* e retrocede metade da largura */
 }
-.centralizar-verticalmente {
-  height: 50px;
-  line-height: 37px;
-  text-align:center;
-  color: white;
-  
-  /* pura mágica */
-  position: absolute;
-  top: 50%; /* posiciona na metade da tela */
-  margin-top: -25px; /* e retrocede metade da altura */
+
+.centralizar-card{
+  margin-top: 18%;
+}
+.bg-fundo{
+  background: #bababa;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+.bg-login{
+  background-color: rgba(0,0,0,0.09) !important;
 }
