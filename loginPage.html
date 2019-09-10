@@ -17,18 +17,18 @@
 				<div class="navbar-nav mr-auto">
 					<div class="dropdown">
 						<a class="btn nav-link nav-item dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-						id="dropdownMasculino" href="#masculino">Futebol</a>
+							id="dropdownMasculino" href="#masculino">Masculino</a>
 						<div class="dropdown-menu" aria-labelledby="dropdownMenu">
-							<a class="dropdown-item" href="#calcados">Calçados</a>
-							<a class="dropdown-item" href="#camisas">Camisas</a>
-							<a class="dropdown-item" href="#calcas">Calças</a>
-							<a class="dropdown-item" href="#relogios">Relógios</a>
-							<a class="dropdown-item" href="#oculos">Óculos</a>
+							<a class="dropdown-item" href="productsPage.html">Calçados</a>
+							<a class="dropdown-item" href="productsPage.html">Camisas</a>
+							<a class="dropdown-item" href="productsPage.html">Calças</a>
+							<a class="dropdown-item" href="productsPage.html">Relógios</a>
+							<a class="dropdown-item" href="productsPage.html">Óculos</a>
 						</div>
 					</div>
 					<div class="dropdown">
 						<a class="btn nav-link nav-item dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-						id="dropdownFeminino" href="#feminino">Feminino</a>
+							id="dropdownFeminino" href="#feminino">Feminino</a>
 						<div class="dropdown-menu" aria-labelledby="dropdownMenu">
 							<a class="dropdown-item" href="#calcados">Calçados</a>
 							<a class="dropdown-item" href="#calcas">Camisas</a>
@@ -37,7 +37,7 @@
 					</div>
 					<div class="dropdown">
 						<a class="btn nav-link nav-item dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-						id="dropdownInfantil" href="#infantil">Infantil</a>
+							id="dropdownInfantil" href="#infantil">Infantil</a>
 						<div class="dropdown-menu" aria-labelledby="dropdownMenu">
 							<a class="dropdown-item" href="#calcados">Calçados</a>
 							<a class="dropdown-item" href="#calcas">Camisas</a>
@@ -47,7 +47,7 @@
 					</div>
 					<div class="dropdown">
 						<a class="btn nav-link nav-item dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-						id="dropdownInfantil" href="#esportes">Esportes</a>
+							id="dropdownInfantil" href="#esportes">Esportes</a>
 						<div class="dropdown-menu" aria-labelledby="dropdownMenu">
 							<a class="dropdown-item" href="#calcados">Calçados</a>
 							<a class="dropdown-item" href="#calcas">Camisas de Futebol</a>
@@ -56,69 +56,178 @@
 						</div>
 					</div>
 				</div>
-				<div class="centralizar-horizontalmente">
-					<a class="navbar-brand align-contentcenter" href="#">
+				<div class="centralizar-horizontalmente centralizar-verticalmente">
+					<a class="navbar-brand align-contentcenter" href="index.html">
 						<img src="assets/images/Logo.png" style="width: 40px" alt="Coki">
 					</a>
 					<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#categorias"
-					aria-controls="categorias" aria-expanded="false" aria-label="Coki">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+						aria-controls="categorias" aria-expanded="false" aria-label="Coki">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				</div>
+				<div class="navbar-nav">
+					<a class="nav-link nav-item" href="#Entrar">
+						<i class="fas fa-question"></i> Ajuda
+					</a>
+					<a class="nav-link nav-item" href="#atendimento">
+						<i class="fas fa-phone"></i> Atendimento
+					</a>
+					<a class="nav-link nav-item" href="loginPage.html">
+						<i class="fas fa-user"></i> Entrar
+					</a>
+				</div>
 			</div>
-			<div class="navbar-nav">
-				<a class="nav-link nav-item" href="#atendimento">
-					<i class="fas fa-phone"></i> Atendimento
-				</a>
-				<a class="nav-link nav-item" href="#Entrar">
-					<i class="fas fa-user"></i> Entrar
-				</a>
+		</div>
+	</nav>
+	<div class="alert alert-success" style="margin-top: 60px;" role="alert">
+		<h4 class="alert-heading">Bem-Vindo!</h4>
+		<p>Nesta página você irá se logar para ter acesso ao seu carrinho de compras e também a promoções exclusivas
+			disponíveis apenas para usuários cadastrados!</p>
+		<hr>
+		<p class="mb-0">Ao término do Cadastro você receberá um cupom de presente!</p>
+	</div>
+	<div class="container" style="display: flex;">
+		<!--Login-->
+		<div class="card-login" style="ml-auto;">
+			<h5 class="card-header">Login</h5>
+			<div class="card-body bg-login">
+				<form id="id_form">
+					<fieldset class="form-group">
+						<div class="form-group row">
+							<label for="email"
+								class="card-text col-form-label col-lg-2 text-left text-lg-right">Email</label>
+							<div class="col-lg-10">
+								<input type="text" class="form-control" id="email" placeholder="Informe seu email">
+								<div id="feedback-email" class="invalid-feedback d-none">
+									Este campo deve ser informado.
+								</div>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="senha"
+								class="card-text col-form-label col-lg-2 text-left text-lg-right">Senha</label>
+							<div class="col-lg-10">
+								<input type="text" class="form-control" id="senha" placeholder="Informe sua senha">
+								<div id="feedback-senha" class="invalid-feedback d-none">
+									Este campo deve ser informado.
+								</div>
+							</div>
+						</div>
+						<div class="form-group row">
+							<div class="col-lg-10 offset-lg-2" style="margin-top: 10px;">
+								<button type="submit" class="btn btn-success btn-sm">
+									Logar
+								</button>
+							</div>
+						</div>
+			</div>
+		</div>
+		<!--Cadastro-->
+		<div class="card-login" style="mr-auto; margin-left: 20px;">
+			<h5 class="card-header">Cadastro</h5>
+			<div class="card-body bg-login">
+				<form id="id_form">
+					<fieldset class="form-group">
+						<div class="form-group row">
+							<label for="email"
+								class="card-text col-form-label col-lg-2 text-left text-lg-right">Nome</label>
+							<div class="col-lg-10">
+								<input type="text" class="form-control" id="email" placeholder="Informe seu nome">
+								<div id="feedback-email" class="invalid-feedback d-none">
+									Este campo deve ser informado.
+								</div>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="email"
+								class="card-text col-form-label col-lg-2 text-left text-lg-right">CPF</label>
+							<div class="col-lg-10">
+								<input type="text" class="form-control" id="email" placeholder="Apenas dígitos">
+								<div id="feedback-email" class="invalid-feedback d-none">
+									Este campo deve ser informado.
+								</div>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="email"
+								class="card-text col-form-label col-lg-2 text-left text-lg-right">Email</label>
+							<div class="col-lg-10">
+								<input type="text" class="form-control" id="email" placeholder="Informe seu email">
+								<div id="feedback-email" class="invalid-feedback d-none">
+									Este campo deve ser informado.
+								</div>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="senha"
+								class="card-text col-form-label col-lg-2 text-left text-lg-right">Senha</label>
+							<div class="col-lg-10">
+								<input type="text" class="form-control" id="senha" placeholder="Informe sua senha">
+								<div id="feedback-senha" class="invalid-feedback d-none">
+									Este campo deve ser informado.
+								</div>
+							</div>
+						</div>
+						<div class="form-group row">
+							<div class="col-lg-10 offset-lg-2" style="margin-top: 10px;">
+								<button type="submit" class="btn btn-success btn-sm">
+									Cadastrar
+								</button>
+							</div>
+						</div>
 			</div>
 		</div>
 	</div>
-</nav>
-<!--LOGIN-->
-<div class="card container row centralizar-card">
-	<h5 class="card-header">Login</h5>
-	<div class="card-body bg-login">
-		<form id="id_form">
-			<fieldset class="form-group">
-				<legend class="card-title font-weight-bold">Entrar</legend>
-				<div class="form-group row">
-					<label for="email" class="card-text col-form-label col-lg-2 text-left text-lg-right">Email</label>
-					<div class="col-lg-10">
-						<input type="text" class="form-control" id="email" placeholder="Informe seu email">
-						<div id="feedback-email" class="invalid-feedback d-none">
-							Este campo deve ser informado.
-						</div>
-					</div>
-				</div>
-				<div class="form-group row">
-					<label for="senha" class="card-text col-form-label col-lg-2 text-left text-lg-right">senha</label>
-					<div class="col-lg-10">
-						<input type="text" class="form-control" id="senha" placeholder="Informe sua senha">
-						<div id="feedback-senha" class="invalid-feedback d-none">
-							Este campo deve ser informado.
-						</div>
-					</div>
-				</div>
-				<div class="form-group row">
-					<div class="col-lg-10 offset-lg-2" style="margin-top: 10px;">
-						<button type="submit" class="btn btn-primary btn-sm">
-							Enviar
-						</button>
-					</div>
-				</div>
-			</div>
+	<!-- Rodapé -->
+	<div style="background-color: rgba(0,0,0,0.06); margin-left: 4px; margin-top: 20px; display: flex;">
+		<div class="item-rodape">
+			<h5 class="text-dark" style="margin-left: 22px;">Empresas Parceiras</h5>
+			<ul>
+				<li><i>Nestlé</i></li>
+				<li>Bradesco</li>
+				<li>Nubank</li>
+				<li>Cielo</li>
+			</ul>
 		</div>
-		
 
-   <!--
+		<div class="item-rodape">
+			<h5 class="text-dark" style="margin-left: 22px;">Estados</h5>
+			<ul>
+				<li>Rio de Janeiro</li>
+				<li>São Paulo</li>
+				<li>Minas Gerais</li>
+				<li>Rondônia</li>
+			</ul>
+		</div>
+
+		<div class="item-rodape">
+			<h5 class="text-dark" style="margin-left: 22px;">Redes Sociais</h5>
+			<ul>
+				<li>Twitter</li>
+				<li>Facebook</li>
+				<li>Instagram</li>
+				<li>Snapchat</li>
+			</ul>
+		</div>
+
+		<div class="item-rodape">
+			<h5 class="text-dark" style="margin-left: 22px;">Contato</h5>
+			<ul>
+				<li>Coki</li>
+				<li>(11)99999-9999</li>
+				<li><a href='mailto:popo@pb.dum.br'>coki@gmail.com</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!--
    <header class="bgimage d-none d-md-block mb-4"></header>
 -->
-<script src="assets/js/jquery-3.3.1.js"></script>
-<script src="assets/js/popper.js"></script>
-<script src="assets/js/bootstrap.js"></script>
-<script src="assets/js/script.js"></script>
+	<script src="assets/js/jquery-3.3.1.js"></script>
+	<script src="assets/js/popper.js"></script>
+	<script src="assets/js/bootstrap.js"></script>
+	<script src="assets/js/script.js"></script>
 </body>
 
 </html>

@@ -210,8 +210,9 @@
   margin-left: -100px; /* e retrocede metade da largura */
 }
 
-.centralizar-card{
-  margin-top: 18%;
+.card-login{
+  margin-top: 1%;
+  width: 600px;
 }
 .bg-fundo{
   background: #bababa;
@@ -224,4 +225,7 @@
 }
 .price{
   color: orangered;
+}
+.item-rodape{
+  width: 350px;
 }
