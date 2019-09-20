@@ -136,32 +136,33 @@
 			<div class="modal-dialog modal-lg">
 				<div class="modal-content">
 					<div class="modal-header">
-						<span class="modal-title">Cadastro</span>
+						<span class="modal-title">Reserva de Passeios e Excursões</span>
 						<button type="button" class="close" data-dismiss="modal" aria-label="close">
 							<span aria-hidden="true">&times;</span>
 						</button>
 					</div>
 					<div class="modal-body">
-						<form id="id_form" action="">
+						<form id="id-form" data-toggle="tooltip" action="">
 							<fieldset class="form-group">
 								<legend class="font-weight-bold">Informações Pessoais</legend>
 
 								<div class="form-group row">
 									<label for="nome"
-										class="col-form-label col-lg-2 text-left text-lg-right">Nome</label>
+										class="col-form-label col-lg-2 text-lg-right text-left font-weight-bold">Nome</label>
 									<div class="col-lg-10">
-										<input type="text" class="form-control" id="nome"
+										<input type="text" class="form-control form-control-sm" id="nome"
 											placeholder="Informe seu nome">
-										<div id="feedback-nome" class="invalid-feedback d-none">
+										<div class="invalid-feedback">
 											Este campo deve ser informado.
 										</div>
 									</div>
 								</div>
 								<div class="form-group row">
-									<label class="col-form-label col-lg-2 text-left text-lg-right">Sexo</label>
+									<label
+										class="col-form-label col-lg-2 text-lg-right text-left font-weight-bold">Sexo</label>
 									<div class="col-lg-10">
 										<div class="form-check">
-											<input id="sexo-masc" type="radio" name="sexo" value"M"
+											<input id="sexo-masc" type="radio" name="sexo" value="M"
 												class="form-check-input">
 											<label for="sexo-masc" class="form-check-label">
 												Masculino
@@ -174,7 +175,18 @@
 												Feminino
 											</label>
 										</div>
-										<div id="feedback-sexo" class="invalid-feedback">
+										<div id="sexo-feedback" class="invalid-feedback">
+											Este campo deve ser informado.
+										</div>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="endereco"
+										class="col-form-label col-lg-2 text-lg-right text-left font-weight-bold">Endereço</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control form-control-sm" id="endereco"
+											placeholder="Informe seu endereço">
+										<div class="invalid-feedback">
 											Este campo deve ser informado.
 										</div>
 									</div>
@@ -183,11 +195,11 @@
 							<fieldset class="form-group" style="margin-bottom: 0px;">
 								<legend class="font-weight-bold">Informações do Passeio/Excursão</legend>
 								<div class="form-group row">
-									<label for="passeio1"
-										class="col-form-label col-lg-2 text-left text-lg-right">Passeio</label>
+									<label for="passeio"
+										class="col-form-label col-lg-2 text-lg-right text-left font-weight-bold">Passeio</label>
 									<div class="col-lg-10">
-										<select class="form-control" id="passeio1">
-											<option selected value="">--- selecione um passeio ---</option>
+										<select class="form-control form-control-sm" id="passeio">
+											<option value="">--- selecione um passeio ---</option>
 											<option value="1">Arcos da Lapa</option>
 											<option value="2">Ciclovia</option>
 											<option value="3">Copacabana</option>
@@ -195,43 +207,38 @@
 											<option value="5">Maracanã</option>
 											<option value="6">Pão de Açucar</option>
 										</select>
+										<div class="invalid-feedback">
+											Este campo deve ser informado.
+										</div>
 									</div>
 								</div>
 								<div class="form-group row">
-									<label for="passeio2"
-										class="col-form-label col-lg-2 text-left text-lg-right">Passeio</label>
-									<div class="col-lg-10">
-										<select class="form-control" id="passeio2" multiple>
-											<option value="1">Arcos da Lapa</option>
-											<option value="2">Ciclovia</option>
-											<option value="3">Copacabana</option>
-											<option value="4">Cristo Redentor</option>
-											<option value="5">Maracanã</option>
-											<option value="6">Pão de Açucar</option>
-										</select>
-									</div>
-								</div>
-								<div class="form-group row">
-									<label class="col-form-label col-lg-2 text-left text-lg-right">Excursão</label>
+									<label
+										class="col-form-label col-lg-2 text-lg-right text-left font-weight-bold">Excursões</label>
 									<div class="col-lg-10">
 										<div class="form-check">
-											<input id="ilha-grande" type="checkbox" name="ilha"
-												class="form-check-input">
-											<label for="ilha-grande" class="form-check-label">
+											<input id="ilha" type="checkbox" name="ilha"
+												class="form-check-input excursao">
+											<label for="ilha" class="form-check-label">
 												Ilha Grande
 											</label>
 										</div>
 										<div class="form-check">
-											<input id="paraty" type="checkbox" name="paraty" class="form-check-input">
+											<input id="paraty" type="checkbox" name="paraty"
+												class="form-check-input excursao">
 											<label for="paraty" class="form-check-label">
 												Paraty
 											</label>
 										</div>
 										<div class="form-check">
-											<input id="buzios" type="checkbox" name="buzios" class="form-check-input">
+											<input id="buzios" type="checkbox" name="buzios"
+												class="form-check-input excursao">
 											<label for="buzios" class="form-check-label">
 												Buzios e Arraial do Cabo
 											</label>
+										</div>
+										<div id="feedback-excursao" class="invalid-feedback">
+											Este campo deve ser informado.
 										</div>
 									</div>
 								</div>
