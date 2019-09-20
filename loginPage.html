@@ -123,9 +123,7 @@
 						<div class="form-group row">
 							<div class="col-lg-10 offset-lg-2" style="margin-top: 10px;">
 								<a href="#reserva" data-toggle="modal">
-									<button type="submit" class="btn btn-success btn-sm">
-										Cadastrar
-									</button>
+									Cadastrar
 								</a>
 							</div>
 						</div>
@@ -136,13 +134,13 @@
 			<div class="modal-dialog modal-lg">
 				<div class="modal-content">
 					<div class="modal-header">
-						<span class="modal-title">Reserva de Passeios e Excursões</span>
+						<span class="modal-title">Cadastro</span>
 						<button type="button" class="close" data-dismiss="modal" aria-label="close">
 							<span aria-hidden="true">&times;</span>
 						</button>
 					</div>
 					<div class="modal-body">
-						<form id="id-form" data-toggle="tooltip" action="">
+						<form id="cadastro-form" data-toggle="tooltip" action="">
 							<fieldset class="form-group">
 								<legend class="font-weight-bold">Informações Pessoais</legend>
 
@@ -182,7 +180,7 @@
 								</div>
 								<div class="form-group row">
 									<label for="endereco"
-										class="col-form-label col-lg-2 text-lg-right text-left font-weight-bold">Endereço</label>
+										class="col-form-label col-lg-2 text-lg-right text-left font-weight-bold">Endereço de entrega</label>
 									<div class="col-lg-10">
 										<input type="text" class="form-control form-control-sm" id="endereco"
 											placeholder="Informe seu endereço">
@@ -193,19 +191,18 @@
 								</div>
 							</fieldset>
 							<fieldset class="form-group" style="margin-bottom: 0px;">
-								<legend class="font-weight-bold">Informações do Passeio/Excursão</legend>
 								<div class="form-group row">
 									<label for="passeio"
-										class="col-form-label col-lg-2 text-lg-right text-left font-weight-bold">Passeio</label>
+										class="col-form-label col-lg-2 text-lg-right text-left font-weight-bold">Cidade</label>
 									<div class="col-lg-10">
 										<select class="form-control form-control-sm" id="passeio">
 											<option value="">--- selecione um passeio ---</option>
-											<option value="1">Arcos da Lapa</option>
-											<option value="2">Ciclovia</option>
-											<option value="3">Copacabana</option>
-											<option value="4">Cristo Redentor</option>
-											<option value="5">Maracanã</option>
-											<option value="6">Pão de Açucar</option>
+											<option value="1">Niterói</option>
+											<option value="2">Maricá</option>
+											<option value="3">Rio de Janeiro</option>
+											<option value="4">Saquarema</option>
+											<option value="5">Araruama</option>
+											<option value="6">Rio das Ostras</option>
 										</select>
 										<div class="invalid-feedback">
 											Este campo deve ser informado.
@@ -213,28 +210,26 @@
 									</div>
 								</div>
 								<div class="form-group row">
-									<label
-										class="col-form-label col-lg-2 text-lg-right text-left font-weight-bold">Excursões</label>
 									<div class="col-lg-10">
 										<div class="form-check">
 											<input id="ilha" type="checkbox" name="ilha"
 												class="form-check-input excursao">
 											<label for="ilha" class="form-check-label">
-												Ilha Grande
+												Receber ofertas imperdíveis por email
 											</label>
 										</div>
 										<div class="form-check">
 											<input id="paraty" type="checkbox" name="paraty"
 												class="form-check-input excursao">
 											<label for="paraty" class="form-check-label">
-												Paraty
+												Contribuir com informações pessoais
 											</label>
 										</div>
 										<div class="form-check">
 											<input id="buzios" type="checkbox" name="buzios"
 												class="form-check-input excursao">
 											<label for="buzios" class="form-check-label">
-												Buzios e Arraial do Cabo
+												Salvar essa conta neste dispositivo
 											</label>
 										</div>
 										<div id="feedback-excursao" class="invalid-feedback">

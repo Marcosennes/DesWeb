@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="assets/css/bootstrap.css" rel="stylesheet">
+	<link href="assets/css/all.css" rel="stylesheet">
+	<link href="assets/css/styles.css" rel="stylesheet">
+	<title>Coki</title>
+</head>
+
+<body>
+	<nav class="fixed-top navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-collapse collapse" id="categorias">
+				<div class="navbar-nav mr-auto">
+					<div class="dropdown">
+						<a class="btn nav-link nav-item dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+						id="dropdownMasculino" href="#masculino">Masculino</a>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenu">
+							<a class="dropdown-item" href="productsPage.html">Calçados</a>
+							<a class="dropdown-item" href="productsPage.html">Camisas</a>
+							<a class="dropdown-item" href="productsPage.html">Calças</a>
+							<a class="dropdown-item" href="productsPage.html">Relógios</a>
+							<a class="dropdown-item" href="productsPage.html">Óculos</a>
+						</div>
+					</div>
+					<div class="dropdown">
+						<a class="btn nav-link nav-item dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+						id="dropdownFeminino" href="#feminino">Feminino</a>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenu">
+							<a class="dropdown-item" href="#calcados">Calçados</a>
+							<a class="dropdown-item" href="#calcas">Camisas</a>
+							<a class="dropdown-item" href="#oculos">Acessórios</a>
+						</div>
+					</div>
+					<div class="dropdown">
+						<a class="btn nav-link nav-item dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+						id="dropdownInfantil" href="#infantil">Infantil</a>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenu">
+							<a class="dropdown-item" href="#calcados">Calçados</a>
+							<a class="dropdown-item" href="#calcas">Camisas</a>
+							<a class="dropdown-item" href="#relogios">Moletons</a>
+							<a class="dropdown-item" href="#oculos">Macacões</a>
+						</div>
+					</div>
+					<div class="dropdown">
+						<a class="btn nav-link nav-item dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+						id="dropdownInfantil" href="#esportes">Esportes</a>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenu">
+							<a class="dropdown-item" href="#calcados">Calçados</a>
+							<a class="dropdown-item" href="#calcas">Camisas de Futebol</a>
+							<a class="dropdown-item" href="#relogios">Moletons</a>
+							<a class="dropdown-item" href="#oculos">Shorts</a>
+						</div>
+					</div>
+				</div>
+				<div class="centralizar-horizontalmente centralizar-verticalmente">
+					<a class="navbar-brand align-contentcenter" href="index.html">
+						<img src="assets/images/Logo.png" style="width: 40px" alt="Coki">
+					</a>
+					<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#categorias"
+					aria-controls="categorias" aria-expanded="false" aria-label="Coki">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+			<div class="navbar-nav">
+				<a class="nav-link nav-item" href="HelpPage.html">
+					<i class="fas fa-question"></i> Ajuda
+				</a>
+				<a class="nav-link nav-item" href="#atendimento">
+					<i class="fas fa-phone"></i> Atendimento
+				</a>
+				<a class="nav-link nav-item" href="loginPage.html">
+					<i class="fas fa-user"></i> Entrar
+				</a>
+			</div>
+		</div>
+	</div>
+</nav>
+<div class="alert alert-success" style="margin-top: 80px;" role="alert">
+	<h4 class="alert-heading">Bem-Vindo!</h4>
+	<p>Nesta página você irá se logar para ter acesso ao seu carrinho de compras e também a promoções exclusivas
+	disponíveis apenas para usuários cadastrados!</p>
+	<hr>
+	<p class="mb-0">Ao término do Cadastro você receberá um cupom de presente!</p>
+</div>
+<!--Login-->
+
+<!--Cadastro-->
+<span class="modal-title">Cadastro</span>
+<button type="button" class="close" data-dismiss="modal" aria-label="close">
+	<span aria-hidden="true">&times;</span>
+</button>
+<form id="cadastro-form" data-toggle="tooltip" action="">
+	<fieldset class="form-group">
+		<legend class="font-weight-bold">Informações Pessoais</legend>
+
+		<div class="form-group row">
+			<label for="nome"
+			class="col-form-label col-lg-2 text-lg-right text-left font-weight-bold">Nome</label>
+			<div class="col-lg-10">
+				<input type="text" class="form-control form-control-sm" id="nome"
+				placeholder="Informe seu nome">
+				<div class="invalid-feedback">
+					Este campo deve ser informado.
+				</div>
+			</div>
+		</div>
+		<div class="form-group row">
+			<label
+			class="col-form-label col-lg-2 text-lg-right text-left font-weight-bold">Sexo</label>
+			<div class="col-lg-10">
+				<div class="form-check">
+					<input id="sexo-masc" type="radio" name="sexo" value="M"
+					class="form-check-input">
+					<label for="sexo-masc" class="form-check-label">
+						Masculino
+					</label>
+				</div>
+				<div class="form-check">
+					<input id="sexo-fem" type="radio" name="sexo" value"F"
+					class="form-check-input">
+					<label for="sexo-fem" class="form-check-label">
+						Feminino
+					</label>
+				</div>
+				<div id="sexo-feedback" class="invalid-feedback">
+					Este campo deve ser informado.
+				</div>
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="endereco"
+			class="col-form-label col-lg-2 text-lg-right text-left font-weight-bold">Endereço de entrega</label>
+			<div class="col-lg-10">
+				<input type="text" class="form-control form-control-sm" id="endereco"
+				placeholder="Informe seu endereço">
+				<div class="invalid-feedback">
+					Este campo deve ser informado.
+				</div>
+			</div>
+		</div>
+	</fieldset>
+	<fieldset class="form-group" style="margin-bottom: 0px;">
+		<div class="form-group row">
+			<label for="passeio"
+			class="col-form-label col-lg-2 text-lg-right text-left font-weight-bold">Cidade</label>
+			<div class="col-lg-10">
+				<select class="form-control form-control-sm" id="passeio">
+					<option value="">--- selecione um passeio ---</option>
+					<option value="1">Niterói</option>
+					<option value="2">Maricá</option>
+					<option value="3">Rio de Janeiro</option>
+					<option value="4">Saquarema</option>
+					<option value="5">Araruama</option>
+					<option value="6">Rio das Ostras</option>
+				</select>
+				<div class="invalid-feedback">
+					Este campo deve ser informado.
+				</div>
+			</div>
+		</div>
+		<div class="form-group row">
+			<div class="col-lg-10">
+				<div class="form-check">
+					<input id="ilha" type="checkbox" name="ilha"
+					class="form-check-input excursao">
+					<label for="ilha" class="form-check-label">
+						Receber ofertas imperdíveis por email
+					</label>
+				</div>
+				<div class="form-check">
+					<input id="paraty" type="checkbox" name="paraty"
+					class="form-check-input excursao">
+					<label for="paraty" class="form-check-label">
+						Contribuir com informações pessoais
+					</label>
+				</div>
+				<div class="form-check">
+					<input id="buzios" type="checkbox" name="buzios"
+					class="form-check-input excursao">
+					<label for="buzios" class="form-check-label">
+						Salvar essa conta neste dispositivo
+					</label>
+				</div>
+				<div id="feedback-excursao" class="invalid-feedback">
+					Este campo deve ser informado.
+				</div>
+			</div>
+		</div>
+	</fieldset>
+	<div class="form-group row">
+		<div class="col-lg-10 offset-lg-2">
+			<button type="submit" class="btn btn-primary btn-sm">
+				Enviar
+			</button>
+		</div>
+	</div>
+</form>
+</div>
+<!-- Rodapé -->
+<div style="background-color: rgba(0,0,0,0.06); margin-left: 4px; margin-top: 20px; display: flex;">
+	<div class="item-rodape">
+		<h5 class="text-dark" style="margin-left: 22px;">Empresas Parceiras</h5>
+		<ul>
+			<li><i>Nestlé</i></li>
+			<li>Bradesco</li>
+			<li>Nubank</li>
+			<li>Cielo</li>
+		</ul>
+	</div>
+
+	<div class="item-rodape">
+		<h5 class="text-dark" style="margin-left: 22px;">Estados</h5>
+		<ul>
+			<li>Rio de Janeiro</li>
+			<li>São Paulo</li>
+			<li>Minas Gerais</li>
+			<li>Rondônia</li>
+		</ul>
+	</div>
+
+	<div class="item-rodape">
+		<h5 class="text-dark" style="margin-left: 22px;">Redes Sociais</h5>
+		<ul>
+			<li>Twitter</li>
+			<li>Facebook</li>
+			<li>Instagram</li>
+			<li>Snapchat</li>
+		</ul>
+	</div>
+
+	<div class="item-rodape">
+		<h5 class="text-dark" style="margin-left: 22px;">Contato</h5>
+		<ul>
+			<li>Coki</li>
+			<li>(11)99999-9999</li>
+			<li>coki@gmail.com
+			</li>
+		</ul>
+	</div>
+</div>
+
+	<!--
+   <header class="bgimage d-none d-md-block mb-4"></header>
+-->
+
+<script src="assets/js/jquery-3.3.1.js"></script>
+<script src="assets/js/popper.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+
+</html>
