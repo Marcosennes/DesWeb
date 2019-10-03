@@ -27,11 +27,6 @@ $(function () {
       }
       $("#data-like").text(like)
       $("#data-dislike").text(dislike)
-
-
-      // let dislike = $("#dislike").data("dislike")
-      //$("#dislike").addClass("badge badge-secondary")
-      //$("#dislike").text(dislike)
    })
 
    $("#dislike").click(function () {
