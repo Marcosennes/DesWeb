@@ -1,0 +1,159 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="{% static 'coki_app/css/bootstrap.css' %}"/>
+	<link rel="stylesheet" type="text/css" href="{% static 'coki_app/css/all.css' %}"/>
+	<link rel="stylesheet" type="text/css" href="{% static 'coki_app/css/geral.css' %}"/>
+	<title>{% block titulo %}Coki{% endblock titulo %}</title>
+	<style>
+		{% block estilo %}
+
+		{% endblock estilo %}		
+	</style>
+</head>
+<body>
+
+<nav id= "barra-navegacao" class="fixed-top navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+	<div class="container">
+		<div class="navbar-nav mr-auto">
+			<div class="dropdown">
+				<a class="btn nav-link nav-item dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+				id="dropdownMasculino" href="#masculino">Masculino</a>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenu">
+					<a class="dropdown-item" href="{% url 'coki_app:index' %}">Calçados</a>
+					<a class="dropdown-item" href="{% url 'coki_app:index' %}">Camisas</a>
+					<a class="dropdown-item" href="{% url 'coki_app:index' %}">Calças</a>
+					<a class="dropdown-item" href="{% url 'coki_app:index' %}">Relógios</a>
+					<a class="dropdown-item" href="{% url 'coki_app:index' %}">Óculos</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<a class="btn nav-link nav-item dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+				id="dropdownFeminino" href="#feminino">Feminino</a>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenu">
+					<a class="dropdown-item" href="#calcados">Calçados</a>
+					<a class="dropdown-item" href="#calcas">Camisas</a>
+					<a class="dropdown-item" href="#oculos">Acessórios</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<a class="btn nav-link nav-item dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+				id="dropdownInfantil" href="#infantil">Infantil</a>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenu">
+					<a class="dropdown-item" href="#calcados">Calçados</a>
+					<a class="dropdown-item" href="#calcas">Camisas</a>
+					<a class="dropdown-item" href="#relogios">Moletons</a>
+					<a class="dropdown-item" href="#oculos">Macacões</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<a class="btn nav-link nav-item dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+				id="dropdownInfantil" href="#esportes">Esportes</a>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenu">
+					<a class="dropdown-item" href="#calcados">Calçados</a>
+					<a class="dropdown-item" href="#calcas">Camisas de Futebol</a>
+					<a class="dropdown-item" href="#relogios">Moletons</a>
+					<a class="dropdown-item" href="#oculos">Shorts</a>
+				</div>
+			</div>
+		</div>
+		<div class="navbar-collapse collapse" id="categorias">
+			<div class="navbar-brand mx-auto">
+				<a class="" href="{% url 'coki_app:index' %}">
+				<img src="{% static 'coki_app/images/Logo.png' %}" style="	width: 40px" alt="Coki">
+				</a>
+				<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#categorias"
+				aria-controls="categorias" aria-expanded="false" aria-label="Coki">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+		</div>
+		<div class="navbar-nav">
+			<a class="nav-link nav-item" href="HelpPage.html">
+				<i class="fas fa-question"></i> Ajuda
+			</a>
+			<a class="nav-link nav-item" href="#atendimento">
+				<i class="fas fa-phone"></i> Atendimento
+			</a>
+			<a class="nav-link nav-item" href="loginPage.html">
+				<i class="fas fa-user"></i> Entrar
+			</a>
+		</div>
+	</div>
+</nav>
+<div>
+	{% block conteudo %}
+
+	{% endblock %}	
+</div>
+<!-- Rodapé -->
+<div class="footer"> 
+	<div class="container">
+		<div class="shadow retangulo" style="background-color: rgba(0,0,0,0.06);">
+			<div class="row">
+				<div class="col-lg-3 col-sm-7">
+					<div class="item-rodape">
+						<h5 class="text-dark" style="margin-left: 22px;">Empresas Parceiras</h5>
+						<ul>
+							<li><i>Nestlé</i></li>
+							<li>Bradesco</li>
+							<li>Nubank</li>
+							<li>Cielo</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-7">
+					<div class="item-rodape">
+						<h5 class="text-dark" style="margin-left: 22px;">Estados</h5>
+						<ul>
+							<li>Rio de Janeiro</li>
+							<li>São Paulo</li>
+							<li>Minas Gerais</li>
+							<li>Rondônia</li>
+						</ul>
+					</div>
+				</div>				
+				<div class="col-lg-3 col-sm-7">
+					<div class="item-rodape">
+						<h5 class="text-dark" style="margin-left: 22px;">Redes Sociais</h5>
+						<ul>
+							<li>Twitter</li>
+							<li>Facebook</li>
+							<li>Instagram</li>
+							<li>Snapchat</li>
+						</ul>
+					</div>
+				</div>				
+				<div class="col-lg-3 col-sm-7">
+					<div class="item-rodape">
+						<h5 class="text-dark" style="margin-left: 22px;">Contato</h5>
+						<ul>
+							<li>Coki</li>
+							<li>(11)99999-9999</li>
+							<li>coki@gmail.com</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Fim Rodapé -->
+<script src="{% static 'coki_app/js/jquery-3.3.1.js' %}"></script>
+<script src="{% static 'coki_app/js/popper.js' %}"></script>
+<script src="{% static 'coki_app/js/bootstrap.js' %}"></script>
+<script src="{% static 'coki_app/js/script.js' %}"></script>
+<script>
+	$(document).ready(function () {
+		{% block domready %}
+
+		{% endblock %}
+	});	
+</script>
+</body>
+</html>
